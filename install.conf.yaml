@@ -6,9 +6,11 @@
     ~/.bash_logout: bash_logout
     ~/.bash_aliases: bash_aliases
     ~/.gitconfig: gitconfig
-    ~/.vim/vimrc:
-        path: vim/vimrc
-        create: true
+    # ~/.vim/vimrc:
+    #    path: vim/vimrc
+    #    create: true
+    # ~/.vim: vim
+    ~/.vimrc: vim/vimrc
     ~/.xinitrc: xinitrc
     ~/.config/i3:
         path: config/i3/
