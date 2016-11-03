@@ -1,0 +1,14 @@
+[user]
+	name = paramono
+	email = alex@paramono.com
+[credential]
+	helper = cache
+[core]
+	editor = gvim -f
+	excludesfile = ~/.gitignore
+[diff]
+	tool = gvimdiff
+[alias]
+	lg = log --graph --abbrev-commit --decorate --date=relative --all --color
+	st = status
+	sts = status -s

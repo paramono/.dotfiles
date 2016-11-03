@@ -1,0 +1,394 @@
+
+" An example for a vimrc file.
+"
+" Maintainer:	Bram Moolenaar <Bram@vim.org>
+" Last change:	2008 Dec 17
+"
+" To use it, copy it to
+"     for Unix and OS/2:  ~/.vimrc
+"	      for Amiga:  s:.vimrc
+"  for MS-DOS and Win32:  $VIM\_vimrc
+"	    for OpenVMS:  sys$login:.vimrc
+
+" When started as "evim", evim.vim will already have done these settings.
+if v:progname =~? "evim"
+  finish
+endif
+
+" Use Vim settings, rather than Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+
+" disable matching paren highlighting
+let loaded_matchparen = 1
+
+" Plugin 'vim-addon-mw-utils'
+
+" " Git plugin not hosted on GitHub
+" Plugin 'git://git.wincent.com/command-t.git'
+"
+" " git repos on your local machine (i.e. when working on your own plugin)
+" Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" " Avoid a name conflict with L9
+" Plugin 'user/L9', {'name': 'newL9'}
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'commentary.vim'
+Plugin 'tpope/vim-abolish'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-ragtag'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-surround'
+
+Plugin 'groenewege/vim-less'
+Plugin 'tommcdo/vim-lion'
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'edsono/vim-matchit'
+
+Plugin 'python_match.vim'
+
+" Doesn't work well with YouCompleteMe
+" Plugin 'jmcantrell/vim-virtualenv'
+
+" Plugin 'vim-scripts/snipMate'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'ivalkeen/nerdtree-execute'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+" Plugin 'jistr/vim-nerdtree-tabs'
+
+Plugin 'tabular'
+"Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'a.vim'
+Plugin 'L9'
+
+Plugin 'scrooloose/syntastic'
+Plugin 'justinmk/vim-sneak'
+Plugin 'majutsushi/tagbar'
+Plugin 'mhinz/vim-signify'
+Plugin 'tyru/open-browser.vim'
+Plugin 'tomasr/molokai'
+Plugin 'flazz/vim-colorschemes'
+
+Plugin 'sloria/vim-ped'
+
+" Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'bling/vim-bufferline'
+Plugin 'powerline/fonts'
+
+Plugin 'vim-scripts/summerfruit256.vim'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-colorscheme-switcher'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+" let g:snippets_dir='~/.vim/vim-snippets/snippets'
+
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+
+" nmap <F9> :Next
+
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+if has("vms")
+  set nobackup		" do not keep a backup file, use versions instead
+else
+  set backup		" keep a backup file
+endif
+set history=50		" keep 50 lines of command line history
+set ruler		" show the cursor position all the time
+set showcmd		" display incomplete commands
+set incsearch		" do incremental searching
+
+" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
+" let &guioptions = substitute(&guioptions, "t", "", "g")
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
+" so that you can undo CTRL-U after inserting a line break.
+inoremap <C-U> <C-G>u<C-U>
+
+" In many terminal emulators the mouse works just fine, thus enable it.
+if has('mouse')
+  set mouse=a
+endif
+
+" execute pathogen#infect()
+" call pathogen#helptags()
+
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
+endif
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+
+  " Enable file type detection.
+  " Use the default filetype settings, so that mail gets 'tw' set to 72,
+  " 'cindent' is on in C files, etc.
+  " Also load indent files, to automatically do language-dependent indenting.
+  filetype plugin indent on
+
+  " Put these in an autocmd group, so that we can delete them easily.
+  augroup vimrcEx
+  au!
+
+  " For all text files set 'textwidth' to 78 characters.
+  autocmd FileType text setlocal textwidth=78
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it when the position is invalid or when inside an event handler
+  " (happens when dropping a file on gvim).
+  " Also don't do it when the mark is in the first line, that is the default
+  " position when opening a file.
+  autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
+
+  augroup END
+
+else
+
+  set autoindent		" always set autoindenting on
+
+endif " has("autocmd")
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made.
+" Only define it when not defined already.
+if !exists(":DiffOrig")
+  command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+		  \ | wincmd p | diffthis
+endif
+runtime! ftplugin/man.vim
+
+set smartcase
+" set tabstop=8
+" set expandtab
+" set softtabstop=4
+" set shiftwidth=4
+filetype indent on
+" set smarttab
+set nu
+
+set tags+=~/.vim/systags
+autocmd BufEnter * silent! lcd %:p:h
+
+set backupdir=./.backup,.,/tmp
+set directory=.,./.backup,/tmp
+
+" colorscheme 
+" colorscheme pyte
+" colorscheme mint
+" colorscheme desertedoceanburnt
+" colorscheme DevC++
+" colorscheme disciple
+" colorscheme django
+" colorscheme donbass
+" colorscheme earthburn
+" colorscheme elda
+" colorscheme flatland
+" pyte
+" corn
+" corporation
+" desertedoceanburnt
+" DevC++
+" disciple
+" django
+" donbass
+" dorhinge
+" earthburn
+" elda
+" fine_blue
+" flatland
+
+" getafe
+colorscheme github
+" google
+" gor
+" gotham
+" gotham256
+" heliotrope
+" herokudoc
+" herokudoc-gvim
+" hornet
+" ironman
+" lucius
+" made_of_code
+" marklar
+" mint
+" PaperColor
+
+
+let g:airline_theme='papercolor'
+
+" let g:airline_theme='solarized'
+let g:airline_powerline_fonts = 1
+
+" disable errors and warnings in airline
+let g:airline_section_warning = ''
+let g:airline_section_error = ''
+
+" show tabline
+let g:airline#extensions#tabline#enabled = 1
+
+" always show tabline
+let g:airline#extensions#tabline#tab_min_count = 0
+
+" if the filename is unique, show only its name; if some files share the same name, show directory as well 
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+
+
+" filename + extension :help filename-modifiers
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+
+" hide "X" icon for mouse closing
+let g:airline#extensions#tabline#show_close_button = 0
+
+" hide tab separator
+let g:airline#extensions#tabline#left_alt_sep = ''
+
+" disable tagbar
+let g:airline#extensions#tagbar#enabled = 0
+
+" show tab number 
+let g:airline#extensions#tabline#show_tab_nr = 0
+
+" show only tab number 
+let g:airline#extensions#tabline#tab_nr_type = 1
+
+" show buffers
+let g:airline#extensions#tabline#show_buffers = 1
+
+" show buffer number
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+let g:ycm_python_binary_path = 'python3'
+let g:ycm_server_python_interpreter = 'python3'
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+" let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0 " Removes annoying window; default is 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" by default CtrlP searches files by full path, thus if query "repo" with the
+" following directory structure:
+"  project/src/Repository/Repository.php
+"  project/src/Repository/Foo.php
+"  CtrlP may give preference to Foo.php. To solve this:
+let g:ctrlp_by_filename = 1
+
+"  Where to start search from. w - nearest directory which contains CVS 
+" (.git, .svn), r - current directory (pwd)
+let g:ctrlp_working_path_mode = 'wr'
+
+" CtrlP map
+" let g:ctrlp_map = ''
+
+" denotes whether bufferline should automatically echo to the command bar
+let g:bufferline_echo = 1
+
+
+" the separator used on the left side of a buffer
+" let g:bufferline_active_buffer_left = '['
+" the separator used on the right side of a buffer
+" let g:bufferline_active_buffer_right = ']'
+
+" the symbol to denote that a buffer is modified
+" let g:bufferline_modified = '+'
+
+" denotes whether buffer numbers should be displayed
+let g:bufferline_show_bufnr = 1
+
+" denotes whether the bufferline should have rotation applied
+" default, no rotate, no scrolling
+" let g:bufferline_rotate = 0
+
+" scrolling with fixed current buffer position
+let g:bufferline_rotate = 1
+
+" scrolling without fixed current buffer position
+" let g:bufferline_rotate = 2
+
+" only valid when `g:bufferline_rotate` is set to 1:
+let g:bufferline_fixed_index =  0 "always first
+" let g:bufferline_fixed_index =  1 "always second (default)
+" let g:bufferline_fixed_index = -1 "always last
+
+" denotes how to display the filename of a buffer (see |filename-modifiers|
+" for more details)
+let g:bufferline_fname_mod = ':t'
+
+" denotes the highlight group for inactive buffers when used in the
+" |statusline|
+let g:bufferline_inactive_highlight = 'StatusLineNC'
+
+" denotes the highlight group for the active buffer when used in the
+" |statusline|
+let g:bufferline_active_highlight = 'StatusLine'
+
+" denotes whether the active highlight should be used when there is only one
+" buffer.
+let g:bufferline_solo_highlight = 0
+
+" denotes any exclude patterns.
+let g:bufferline_excludes = [] "see source for defaults
+
+" denotes whether paths in buffer names should be |pathshorten()|-ed.
+let g:bufferline_pathshorten = 0
+
+" privilege elevation
+cmap w!! %!sudo tee > /dev/null %
+nmap <F8> :TagbarToggle<CR>
