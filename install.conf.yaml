@@ -14,8 +14,7 @@
     ~/.vim: vim
     ~/.vimrc: vim/vimrc
     ~/.xinitrc: xinitrc
+    ~/.xsessionrc: xsessionrc
     ~/.config/i3:
         path: config/i3/
         create: true
-
-

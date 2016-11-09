@@ -1,2 +1,7 @@
 #!/bin/sh
-setxkbmap -model pc105 -layout pl,ru -variant legacy, -option grp:alt_shift_toggle,grp_led:scroll
+
+# set pl,ru keyboard layouts. if cinnamon-settings-daemon is used, this will be overriden
+# setxkbmap -model pc105 -layout pl,ru -variant legacy, -option grp:alt_shift_toggle,grp_led:scroll
+
+cinnamon-settings-daemon &
+gsettings set org.nemo.desktop show-desktop-icons false  # prevent desktop from opening when nemo starts
