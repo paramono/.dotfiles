@@ -208,11 +208,13 @@ if !exists(":DiffOrig")
 endif
 runtime! ftplugin/man.vim
 
-set smartcase
-" set tabstop=8
-" set expandtab
+" default tab config
+set tabstop=4
+set shiftwidth=4
+set expandtab
 " set softtabstop=4
-" set shiftwidth=4
+
+set smartcase
 filetype indent on
 " set smarttab
 set nu
