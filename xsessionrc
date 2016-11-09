@@ -1,0 +1,2 @@
+#!/bin/sh
+setxkbmap -model pc105 -layout pl,ru -variant legacy, -option grp:alt_shift_toggle,grp_led:scroll
