@@ -1,5 +1,9 @@
 - clean: ['~']
 
+- defaults:
+    link:
+        force: true
+
 - link:
     ~/.profile: profile
     ~/.bashrc: bashrc
