@@ -42,9 +42,9 @@ let loaded_matchparen = 1
 " " Avoid a name conflict with L9
 " Plug 'user/L9', {'name': 'newL9'}
 
-" let Vundle manage Vundle, required
-Plug 'VundleVim/Vundle.vim'
-Plug 'Valloric/YouCompleteMe'
+
+Plug 'Valloric/YouCompleteMe', {'do': 'python3 install.py'}
+
 Plug 'commentary.vim'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
@@ -58,7 +58,7 @@ Plug 'tpope/vim-surround'
 Plug 'groenewege/vim-less'
 Plug 'tommcdo/vim-lion'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'edsono/vim-matchit'
+Plug 'vim-scripts/matchit.zip'
 
 Plug 'python_match.vim'
 
@@ -94,7 +94,7 @@ Plug 'sloria/vim-ped'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Plug 'bling/vim-bufferline'
-Plug 'powerline/fonts'
+Plug 'powerline/fonts', {'do': './install.sh'}
 
 Plug 'vim-scripts/summerfruit256.vim'
 Plug 'xolox/vim-misc'
