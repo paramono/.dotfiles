@@ -13,7 +13,7 @@
     # ~/.vim/vimrc:
     #    path: vim/vimrc
     #    create: true
-    # ~/.vim: vim
+    ~/.vim: vim
     ~/.vimrc: vim/vimrc
     ~/.xinitrc: xinitrc
     ~/.config/i3:
