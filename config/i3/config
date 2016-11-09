@@ -30,6 +30,7 @@ font pango:DejaVu Sans Mono 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+popup_during_fullscreen smart
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
@@ -165,6 +166,8 @@ bindsym XF86AudioPrev exec playerctl previous
 # Works only if Cinnamon Settings Daemon has been started! (check out xsessionrc)
 bindsym $mod+c exec python2 /usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py
 
+bindsym $mod+m move workspace to output right
+bindsym $mod+n move workspace to output right
 # high DPI
 # https://www.reddit.com/r/linux/comments/31d0wp/i3_and_hidpi_display_everything_is_to_tiny/
 
@@ -205,3 +208,28 @@ bar {
     status_command i3status
     # tray_output primary  # makes nm-applet unusable
 }
+
+# assignments
+assign [class="^chromium-browser$"] 1
+assign [class="^Firefox$"] 1
+
+assign [class="^Thunderbird$"] 3
+assign [class="^Keepassx$"] 4
+assign [class="^Seafile Client$"] 6
+
+# Startup
+exec --no-startup-id keepassx
+exec --no-startup-id seafile-applet
+
+
+workspace 1 output HDMI1
+workspace 3 output HDMI1
+workspace 5 output HDMI1
+workspace 7 output HDMI1
+workspace 9 output HDMI1
+
+workspace 2 output VGA1
+workspace 4 output VGA1
+workspace 6 output VGA1
+workspace 8 output VGA1
+workspace 10 output VGA1
