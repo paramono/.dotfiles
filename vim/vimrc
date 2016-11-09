@@ -1,4 +1,3 @@
-
 " An example for a vimrc file.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
@@ -21,89 +20,90 @@ set nocompatible
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
+
+call plug#begin('~/.vim/plugged')
 
 
 " disable matching paren highlighting
 let loaded_matchparen = 1
 
-" Plugin 'vim-addon-mw-utils'
+" Plug 'vim-addon-mw-utils'
 
 " " Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
+" Plug 'git://git.wincent.com/command-t.git'
 "
 " " git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
+" Plug 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 " " Avoid a name conflict with L9
-" Plugin 'user/L9', {'name': 'newL9'}
+" Plug 'user/L9', {'name': 'newL9'}
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'commentary.vim'
-Plugin 'tpope/vim-abolish'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-ragtag'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-surround'
+Plug 'VundleVim/Vundle.vim'
+Plug 'Valloric/YouCompleteMe'
+Plug 'commentary.vim'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-ragtag'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
 
-Plugin 'groenewege/vim-less'
-Plugin 'tommcdo/vim-lion'
-Plugin 'AndrewRadev/splitjoin.vim'
-Plugin 'edsono/vim-matchit'
+Plug 'groenewege/vim-less'
+Plug 'tommcdo/vim-lion'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'edsono/vim-matchit'
 
-Plugin 'python_match.vim'
+Plug 'python_match.vim'
 
 " Doesn't work well with YouCompleteMe
-" Plugin 'jmcantrell/vim-virtualenv'
+" Plug 'jmcantrell/vim-virtualenv'
 
-" Plugin 'vim-scripts/snipMate'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+" Plug 'vim-scripts/snipMate'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'ivalkeen/nerdtree-execute'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-" Plugin 'jistr/vim-nerdtree-tabs'
+Plug 'scrooloose/nerdtree'
+Plug 'ivalkeen/nerdtree-execute'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'jistr/vim-nerdtree-tabs'
 
-Plugin 'tabular'
+Plug 'tabular'
 "Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'a.vim'
-Plugin 'L9'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'a.vim'
+Plug 'L9'
 
-Plugin 'scrooloose/syntastic'
-Plugin 'justinmk/vim-sneak'
-Plugin 'majutsushi/tagbar'
-Plugin 'mhinz/vim-signify'
-Plugin 'tyru/open-browser.vim'
-Plugin 'tomasr/molokai'
-Plugin 'flazz/vim-colorschemes'
+Plug 'scrooloose/syntastic'
+Plug 'justinmk/vim-sneak'
+Plug 'majutsushi/tagbar'
+Plug 'mhinz/vim-signify'
+Plug 'tyru/open-browser.vim'
+Plug 'tomasr/molokai'
+Plug 'flazz/vim-colorschemes'
 
-Plugin 'sloria/vim-ped'
+Plug 'sloria/vim-ped'
 
-" Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'bling/vim-bufferline'
-Plugin 'powerline/fonts'
+" Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Plug 'bling/vim-bufferline'
+Plug 'powerline/fonts'
 
-Plugin 'vim-scripts/summerfruit256.vim'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-colorscheme-switcher'
+Plug 'vim-scripts/summerfruit256.vim'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-colorscheme-switcher'
 
+call plug#end()
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+" call vundle#end()            " required
 
 " let g:snippets_dir='~/.vim/vim-snippets/snippets'
 
