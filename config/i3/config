@@ -218,6 +218,8 @@ assign [class="^Keepassx$"] 4
 assign [class="^Seafile Client$"] 6
 
 # Startup
+exec --no-startup-id chromium-browser
+exec --no-startup-id thunderbird
 exec --no-startup-id keepassx
 exec --no-startup-id seafile-applet
 
