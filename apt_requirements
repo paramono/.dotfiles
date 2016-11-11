@@ -1,0 +1,67 @@
+update
+
+ppa "seafile/seafile-client"
+ppa "ansible/ansible"
+
+update
+
+# basic
+package "keepassx"
+package "chromium-browser"
+package "skype"
+package "cheese"
+package "pavucontrol"  # (to adjust mic on skype)
+package "audacity"
+package "gparted"
+package "unetbootin"
+package "seafile-gui"
+
+# development
+package "build-essential"
+package "cmake"
+package "python-dev"
+package "python3-dev"
+package "python-pip"
+package "python3-pip"
+
+package "vim"
+package "vim-gtk3" # vim-gnome generates errors on exit, gtk does not
+package "git"
+package "tree"
+package "ntop"
+package "sendmail"
+package "ansible"
+package "sqlite3"
+package "sqliteman"
+package "extlinux"
+
+# for python Pillow
+package "libtiff5-dev" 
+package "libjpeg8-dev" 
+package "zlib1g-dev" 
+package "libfreetype6-dev" 
+package "liblcms2-dev" 
+package "libwebp-dev" 
+package "tcl8.6-dev" 
+package "tk8.6-dev" 
+package "python-tk"
+
+#SpeechRecognition
+package "portaudio19-dev"
+package "python-all-dev" 
+package "python3-all-dev"
+
+# for vim tagbar and other dev needs
+package "exuberant-ctags" 
+
+# i3
+package "i3"
+package "i3blocks"
+package "i3lock"
+package "i3status"
+package "i3-wm"
+package "i3-wm-dbg"
+package "dmenu"
+
+# to control backlight via keyboard (for specific i3 bindsym)
+package "xbacklight"  
