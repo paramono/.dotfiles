@@ -123,3 +123,9 @@ fi
 if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
+
+
+# virtualenvwrapper configuration
+# both of these don't work in .profile
+source /usr/local/bin/virtualenvwrapper.sh
+export PROJECT_HOME=~/dev

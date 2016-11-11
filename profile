@@ -21,4 +21,10 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-PATH=$PATH:~/bin
+export PATH=$PATH:~/bin
+
+# virtualenvwrapper configuration
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=~/envs
+export PROJECT_HOME=~/dev
+source /usr/local/bin/virtualenvwrapper.sh
