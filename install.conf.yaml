@@ -3,6 +3,7 @@
 - defaults:
     link:
         force: true
+        create: true
 
 - link:
     ~/.profile: profile
@@ -15,6 +16,5 @@
     ~/.vimrc: vim/vimrc
     ~/.xinitrc: xinitrc
     ~/.xsessionrc: xsessionrc
-    ~/.config/i3:
-        path: config/i3/
-        create: true
+    ~/bin: bin
+    ~/.config/i3: config/i3/
