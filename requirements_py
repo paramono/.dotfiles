@@ -1,2 +1,10 @@
+# packaging tools
+setuptools
+wheel
+twine
+
+# syntax checking
 flake8
+
+# imaging
 Pillow
