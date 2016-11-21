@@ -9,3 +9,7 @@ flake8
 # imaging
 Pillow
 imgc
+
+# networking
+requests
+httpie
