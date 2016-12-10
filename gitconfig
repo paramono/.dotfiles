@@ -3,9 +3,12 @@
 	email = alex@paramono.com
 [credential]
 	helper = cache
+[color]
+    ui = true
 [core]
 	editor = gvim -f
 	excludesfile = ~/.gitignore
+    pager = less -r
 [diff]
 	tool = gvimdiff
 [alias]
