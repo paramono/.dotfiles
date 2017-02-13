@@ -13,3 +13,6 @@ imgc
 # networking
 requests
 httpie
+
+# scraping
+scrapy

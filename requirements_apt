@@ -23,6 +23,7 @@ package "python-dev"
 package "python3-dev"
 package "python-pip"
 package "python3-pip"
+package "vagrant"
 
 package "vim"
 package "vim-gtk3" # vim-gnome generates errors on exit, gtk does not
@@ -44,6 +45,20 @@ package "libwebp-dev"
 package "tcl8.6-dev" 
 package "tk8.6-dev" 
 package "python-tk"
+
+# scraping
+# package python-lxml
+package python3-lxml
+package python3-crypto
+package python3-cssselect
+package python3-openssl
+package python3-w3lib
+package python3-twisted
+package libxml2-dev
+package libxslt1-dev
+package zlib1g-dev
+package libffi-dev
+package libssl-dev
 
 #SpeechRecognition
 package "portaudio19-dev"
@@ -67,3 +82,8 @@ package "xbacklight"
 
 # ntop has post-install script with pseudo gui which hangs aptfile
 # package "ntop"
+
+# required for bower, which is used in django projects for downloading frontend packages
+# curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+# sudo apt-get install -y nodejs
+
