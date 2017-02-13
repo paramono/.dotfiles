@@ -24,6 +24,7 @@ package "python3-dev"
 package "python-pip"
 package "python3-pip"
 package "vagrant"
+package "virtualbox"
 
 package "vim"
 package "vim-gtk3" # vim-gnome generates errors on exit, gtk does not
