@@ -24,7 +24,11 @@ package "python3-dev"
 package "python-pip"
 package "python3-pip"
 package "vagrant"
+
+# required for vagrant:
 package "virtualbox"
+package "virtualbox-dkms"
+package "linux-headers-generic"
 
 package "vim"
 package "vim-gtk3" # vim-gnome generates errors on exit, gtk does not
