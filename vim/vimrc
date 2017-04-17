@@ -61,6 +61,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/matchit.zip'
 
 Plug 'python_match.vim'
+Plug 'AndrewRadev/sideways.vim'
 
 " Doesn't work well with YouCompleteMe
 " Plug 'jmcantrell/vim-virtualenv'
@@ -394,3 +395,5 @@ let g:bufferline_pathshorten = 0
 " privilege elevation
 cmap w!! %!sudo tee > /dev/null %
 nmap <F8> :TagbarToggle<CR>
+nnoremap <c-h> :SidewaysLeft<cr>
+nnoremap <c-l> :SidewaysRight<cr>
