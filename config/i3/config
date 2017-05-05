@@ -215,6 +215,7 @@ bar {
 assign [class="^chromium-browser$"] 1
 assign [class="^Firefox$"] 1
 
+assign [class="^Shutter$"] 2
 assign [class="^Thunderbird$"] 3
 assign [class="^Keepassx$"] 4
 assign [class="^Seafile Client$"] 6
