@@ -2,6 +2,7 @@ update
 
 ppa "seafile/seafile-client"
 ppa "ansible/ansible"
+ppa "shutter/ppa"
 
 update
 
@@ -84,6 +85,9 @@ package "dmenu"
 
 # to control backlight via keyboard (for specific i3 bindsym)
 package "xbacklight"  
+
+# screenshotting
+package "shutter"
 
 # ntop has post-install script with pseudo gui which hangs aptfile
 # package "ntop"
