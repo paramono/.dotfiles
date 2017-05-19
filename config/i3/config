@@ -212,6 +212,7 @@ bar {
 }
 
 # assignments
+# check classes with xprop or xwininfo
 assign [class="^chromium-browser$"] 1
 assign [class="^Firefox$"] 1
 
@@ -225,6 +226,7 @@ exec --no-startup-id chromium-browser
 exec --no-startup-id thunderbird
 exec --no-startup-id keepassx
 exec --no-startup-id seafile-applet
+exec --no-startup-id seadrive-gui
 exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/nemo'
 
 
