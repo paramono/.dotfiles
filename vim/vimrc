@@ -82,6 +82,8 @@ Plug 'a.vim'
 Plug 'L9'
 
 Plug 'scrooloose/syntastic'
+Plug 'posva/vim-vue'
+
 Plug 'justinmk/vim-sneak'
 Plug 'majutsushi/tagbar'
 Plug 'mhinz/vim-signify'
