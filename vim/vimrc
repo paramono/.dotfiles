@@ -61,7 +61,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/matchit.zip'
 
 Plug 'python_match.vim'
-Plug 'AndrewRadev/sideways.vim'
+Plug 'AndrewRadev/sideways.vim'  "swapping function arguments
 
 " Doesn't work well with YouCompleteMe
 " Plug 'jmcantrell/vim-virtualenv'
