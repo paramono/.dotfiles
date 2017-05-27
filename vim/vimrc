@@ -399,3 +399,13 @@ cmap w!! %!sudo tee > /dev/null %
 nmap <F8> :TagbarToggle<CR>
 nnoremap <c-h> :SidewaysLeft<cr>
 nnoremap <c-l> :SidewaysRight<cr>
+
+" simplify window changing
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" default behaviour splits to up and left, which is confusing
+set splitbelow
+set splitright
