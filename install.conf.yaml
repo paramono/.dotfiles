@@ -15,6 +15,7 @@
     ~/.gitignore: gitignore
     ~/.profile: profile
     ~/.tmux.conf: tmux.conf
+    ~/.tmux/plugins/tpm: submodules/tpm
     ~/.vim: vim
     ~/.vimrc: vim/vimrc
     ~/.xinitrc: xinitrc
