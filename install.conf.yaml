@@ -6,16 +6,17 @@
         create: true
 
 - link:
-    ~/.profile: profile
-    ~/.bashrc: bashrc
-    ~/.bash_logout: bash_logout
     ~/.bash_aliases: bash_aliases
+    ~/.bash_logout: bash_logout
+    ~/.bashrc: bashrc
+    ~/.config/i3: config/i3/
+    ~/.config/i3status: config/i3status
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
+    ~/.profile: profile
+    ~/.tmux.conf: tmux.conf
     ~/.vim: vim
     ~/.vimrc: vim/vimrc
     ~/.xinitrc: xinitrc
     ~/.xsessionrc: xsessionrc
     ~/bin: bin
-    ~/.config/i3: config/i3/
-    ~/.config/i3status: config/i3status

@@ -103,6 +103,8 @@ Plug 'vim-scripts/summerfruit256.vim'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-colorscheme-switcher'
 
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 " All of your Plugins must be added before the following line
