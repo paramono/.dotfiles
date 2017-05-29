@@ -104,7 +104,10 @@ Plug 'vim-scripts/summerfruit256.vim'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-colorscheme-switcher'
 
+Plug 'kana/vim-arpeggio'
+
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'benmills/vimux'
 
 call plug#end()
 
@@ -410,6 +413,13 @@ let g:colorscheme_switcher_define_mappings = 0
 " privilege elevation
 cmap w!! %!sudo tee > /dev/null %
 nmap <F8> :TagbarToggle<CR>
+
+call arpeggio#map('i', '', 0, 'jk', '<Esc>')
+call arpeggio#map('n', '', 0, 'vc', ':VimuxPromptCommand<CR>')
+call arpeggio#map('n', '', 0, 'vl', ':VimuxRunLastCommand<CR>')
+call arpeggio#map('n', '', 0, 'vi', ':VimuxInspectRunner<CR>')
+call arpeggio#map('n', '', 0, 'vz', ':VimuxZoomRunner<CR>')
+
 nnoremap <F5> :PrevColorScheme<CR>
 nnoremap <F6> :NextColorScheme<CR>
 nnoremap <c-h> :SidewaysLeft<cr>
