@@ -415,6 +415,7 @@ cmap w!! %!sudo tee > /dev/null %
 nmap <F8> :TagbarToggle<CR>
 
 call arpeggio#map('i', '', 0, 'jk', '<Esc>')
+call arpeggio#map('ci', '', 0, 'ho', '~/')
 call arpeggio#map('n', '', 0, 'vc', ':VimuxPromptCommand<CR>')
 call arpeggio#map('n', '', 0, 'vl', ':VimuxRunLastCommand<CR>')
 call arpeggio#map('n', '', 0, 'vi', ':VimuxInspectRunner<CR>')
