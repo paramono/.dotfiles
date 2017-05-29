@@ -129,3 +129,5 @@ fi
 # both of these don't work in .profile
 source /usr/local/bin/virtualenvwrapper.sh
 export PROJECT_HOME=~/dev
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
