@@ -45,7 +45,7 @@ let loaded_matchparen = 1
 
 Plug 'Valloric/YouCompleteMe', {'do': 'python3 install.py'}
 
-Plug 'commentary.vim'
+Plug 'vim-scripts/commentary.vim'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-dispatch'
@@ -60,7 +60,7 @@ Plug 'tommcdo/vim-lion'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/matchit.zip'
 
-Plug 'python_match.vim'
+Plug 'vim-scripts/python_match.vim'
 Plug 'AndrewRadev/sideways.vim'  "swapping function arguments
 
 " Doesn't work well with YouCompleteMe
@@ -75,12 +75,12 @@ Plug 'ivalkeen/nerdtree-execute'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'jistr/vim-nerdtree-tabs'
 
-Plug 'tabular'
+Plug 'vim-scripts/tabular'
 "Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 " Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'a.vim'
-Plug 'L9'
+Plug 'vim-scripts/a.vim'
+Plug 'vim-scripts/L9'
 
 Plug 'scrooloose/syntastic'
 Plug 'posva/vim-vue'
