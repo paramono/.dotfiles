@@ -131,3 +131,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 export PROJECT_HOME=~/dev
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Add fzf autocompletion for other commands
+complete -F _fzf_path_completion evince
+complete -F _fzf_path_completion gnome-open
