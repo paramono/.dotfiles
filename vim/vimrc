@@ -416,10 +416,18 @@ nmap <F8> :TagbarToggle<CR>
 
 call arpeggio#map('i', '', 0, 'jk', '<Esc>')
 call arpeggio#map('ci', '', 0, 'ho', '~/')
+
+" Vimux commands
 call arpeggio#map('n', '', 0, 'vc', ':VimuxPromptCommand<CR>')
 call arpeggio#map('n', '', 0, 'vl', ':VimuxRunLastCommand<CR>')
 call arpeggio#map('n', '', 0, 'vi', ':VimuxInspectRunner<CR>')
 call arpeggio#map('n', '', 0, 'vz', ':VimuxZoomRunner<CR>')
+
+" Tab pages commands
+call arpeggio#map('n', '', 0, 'te', ':tabe<CR>') " Create new tab
+call arpeggio#map('n', '', 0, 'to', ':tabo<CR>') " Close all other tab pages
+call arpeggio#map('n', '', 0, 'tn', ':tabn<CR>')
+call arpeggio#map('n', '', 0, 'tp', ':tabp<CR>')
 
 nnoremap <F5> :PrevColorScheme<CR>
 nnoremap <F6> :NextColorScheme<CR>
