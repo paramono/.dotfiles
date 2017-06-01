@@ -52,8 +52,9 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sensible'  " sensible vim defaults
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-obsession'  " automatic session saving
 
 Plug 'groenewege/vim-less'
 Plug 'tommcdo/vim-lion'
