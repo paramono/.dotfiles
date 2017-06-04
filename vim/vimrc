@@ -237,47 +237,8 @@ autocmd BufEnter * silent! lcd %:p:h
 set backupdir=./.backup,.,/tmp
 set directory=.,./.backup,/tmp
 
-" colorscheme 
-" colorscheme pyte
-" colorscheme mint
-" colorscheme desertedoceanburnt
-" colorscheme DevC++
-" colorscheme disciple
-" colorscheme django
-" colorscheme donbass
-" colorscheme earthburn
-" colorscheme elda
-" colorscheme flatland
-" pyte
-" corn
-" corporation
-" desertedoceanburnt
-" DevC++
-" disciple
-" django
-" donbass
-" dorhinge
-" earthburn
-" elda
-" fine_blue
-" flatland
-
-" getafe
-colorscheme github
-" google
-" gor
-" gotham
-" gotham256
-" heliotrope
-" herokudoc
-" herokudoc-gvim
-" hornet
-" ironman
-" lucius
-" made_of_code
-" marklar
-" mint
-" PaperColor
+" colorscheme github
+colorscheme hemisu
 
 
 let g:airline_theme='papercolor'
