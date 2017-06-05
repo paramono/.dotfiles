@@ -136,3 +136,5 @@ export PROJECT_HOME=~/dev
 complete -F _fzf_path_completion evince
 complete -F _fzf_path_completion gnome-open
 complete -F _fzf_path_completion pytest
+
+export EDITOR="/usr/bin/vim"
