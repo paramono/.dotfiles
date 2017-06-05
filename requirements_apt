@@ -16,6 +16,7 @@ package "audacity"
 package "gparted"
 package "unetbootin"
 package "seafile-gui"
+package "calibre"
 
 # development
 package "build-essential"
