@@ -45,9 +45,8 @@ let loaded_matchparen = 1
 
 Plug 'Valloric/YouCompleteMe', {'do': 'python3 install.py'}
 
-Plug 'vim-scripts/commentary.vim'  " gc, gcc and gcu commands for (un)commenting code
 Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'  " gc, gcc and gcu commands for (un)commenting code
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-ragtag'
