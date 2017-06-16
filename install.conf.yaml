@@ -20,4 +20,10 @@
     ~/.vimrc: vim/vimrc
     ~/.xinitrc: xinitrc
     ~/.xsessionrc: xsessionrc
+    ~/.zlogin: zsh/zlogin
+    ~/.zlogout: zsh/zlogout
+    ~/.zpreztorc: zsh/zpreztorc
+    ~/.zprofile: zsh/zprofile
+    ~/.zshenv: zsh/zshenv
+    ~/.zshrc: zshrc
     ~/bin: bin
