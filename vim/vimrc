@@ -45,7 +45,7 @@ let loaded_matchparen = 1
 
 Plug 'Valloric/YouCompleteMe', {'do': 'python3 install.py'}
 
-Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-abolish'  " lets you find, substitute and addreviate several variations of a word + case coercion
 Plug 'tpope/vim-commentary'  " gc, gcc and gcu commands for (un)commenting code
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
