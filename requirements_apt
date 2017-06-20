@@ -17,6 +17,7 @@ package "gparted"
 package "unetbootin"
 package "seafile-gui"
 package "calibre"
+package "zsh"
 
 # development
 package "build-essential"
