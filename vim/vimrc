@@ -48,7 +48,7 @@ Plug 'Valloric/YouCompleteMe', {'do': 'python3 install.py'}
 Plug 'tpope/vim-abolish'  " lets you find, substitute and addreviate several variations of a word + case coercion
 Plug 'tpope/vim-commentary'  " gc, gcc and gcu commands for (un)commenting code
 Plug 'tpope/vim-dispatch'  " invokes make builds in foreground
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'  " git wrapper for vim
 Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'  " sensible vim defaults
