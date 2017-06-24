@@ -50,7 +50,7 @@ Plug 'tpope/vim-commentary'  " gc, gcc and gcu commands for (un)commenting code
 Plug 'tpope/vim-dispatch'  " invokes make builds in foreground
 Plug 'tpope/vim-fugitive'  " git wrapper for vim
 Plug 'tpope/vim-ragtag'  " input mode bindings for html/xml
-Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-repeat'  " repeat last entered commands via . or @
 Plug 'tpope/vim-sensible'  " sensible vim defaults
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-obsession'  " automatic session saving
