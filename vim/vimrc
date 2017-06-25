@@ -55,7 +55,7 @@ Plug 'tpope/vim-sensible'  " sensible vim defaults
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-obsession'  " automatic session saving
 
-Plug 'groenewege/vim-less'
+Plug 'groenewege/vim-less'  " syntax highlighting for LESS (CSS preprocessor)
 Plug 'tommcdo/vim-lion'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/matchit.zip'
