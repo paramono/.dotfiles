@@ -1,0 +1,6 @@
+default_context:
+    author_name: "Alexander Paramonov"
+    full_name: "Alexander Paramonov"
+    email: "alex@paramono.com"
+    github_username: "paramono"
+cookiecutters_dir: "~/.cookiecutters/"

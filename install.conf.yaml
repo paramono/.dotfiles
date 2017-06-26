@@ -11,6 +11,7 @@
     ~/.bashrc: bashrc
     ~/.config/i3: config/i3/
     ~/.config/i3status: config/i3status
+    ~/.cookiecutterrc: cookiecutterrc
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.profile: profile
