@@ -52,7 +52,7 @@ Plug 'tpope/vim-fugitive'  " git wrapper for vim
 Plug 'tpope/vim-ragtag'  " input mode bindings for html/xml
 Plug 'tpope/vim-repeat'  " repeat last entered commands via . or @
 Plug 'tpope/vim-sensible'  " sensible vim defaults
-Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround'  " surround selection with quotes, braces; also swap surroundings
 Plug 'tpope/vim-obsession'  " automatic session saving
 
 Plug 'groenewege/vim-less'  " syntax highlighting for LESS (CSS preprocessor)
