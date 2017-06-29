@@ -56,7 +56,7 @@ Plug 'tpope/vim-surround'  " surround selection with quotes, braces; also swap s
 Plug 'tpope/vim-obsession'  " automatic session saving
 
 Plug 'groenewege/vim-less'  " syntax highlighting for LESS (CSS preprocessor)
-Plug 'tommcdo/vim-lion'
+Plug 'tommcdo/vim-lion'  " align lines to certain symbol
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/matchit.zip'
 
