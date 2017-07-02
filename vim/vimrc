@@ -58,7 +58,7 @@ Plug 'tpope/vim-obsession'  " automatic session saving
 Plug 'groenewege/vim-less'  " syntax highlighting for LESS (CSS preprocessor)
 Plug 'tommcdo/vim-lion'  " align lines to certain symbol
 Plug 'AndrewRadev/splitjoin.vim'  " gS and gJ mapping for splitting/joining selected text
-Plug 'vim-scripts/matchit.zip'
+Plug 'vim-scripts/matchit.zip'  " match braces, if/elif/else constructs, etc. with % command
 
 Plug 'vim-scripts/python_match.vim'
 Plug 'AndrewRadev/sideways.vim'  "swapping function arguments
