@@ -60,7 +60,7 @@ Plug 'tommcdo/vim-lion'  " align lines to certain symbol
 Plug 'AndrewRadev/splitjoin.vim'  " gS and gJ mapping for splitting/joining selected text
 Plug 'vim-scripts/matchit.zip'  " match braces, if/elif/else constructs, etc. with % command
 
-Plug 'vim-scripts/python_match.vim'
+Plug 'vim-scripts/python_match.vim'  " cycle through python's if/then/else
 Plug 'AndrewRadev/sideways.vim'  "swapping function arguments
 
 " Doesn't work well with YouCompleteMe
