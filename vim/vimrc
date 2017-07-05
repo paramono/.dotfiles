@@ -413,4 +413,6 @@ set splitbelow
 set splitright
 
 set directory=
-set directory=~/.vim_swp//
+set directory=~/.vim_swap//
+set backupdir=
+set backupdir=~/.vim_backup//
