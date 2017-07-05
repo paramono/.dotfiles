@@ -30,4 +30,5 @@
     ~/bin: bin
 
 - shell:
-    - mkdir -p ~/.vim_swp/
+    - mkdir -p ~/.vim_swap/
+    - mkdir -p ~/.vim_backup/
