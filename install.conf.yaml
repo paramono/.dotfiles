@@ -28,3 +28,6 @@
     ~/.zshenv: zsh/zshenv
     ~/.zshrc: zshrc
     ~/bin: bin
+
+- shell:
+    - mkdir -p ~/.vim_swp/
