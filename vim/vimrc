@@ -68,7 +68,7 @@ Plug 'AndrewRadev/sideways.vim'  "swapping function arguments
 
 " Plug 'vim-scripts/snipMate'
 Plug 'SirVer/ultisnips'  " snippet management
-Plug 'honza/vim-snippets'
+Plug 'honza/vim-snippets'  " additional snippets for various programming languages (snipMate and UltiSnip)
 
 Plug 'scrooloose/nerdtree'
 Plug 'ivalkeen/nerdtree-execute'
