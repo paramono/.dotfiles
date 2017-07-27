@@ -70,7 +70,7 @@ Plug 'AndrewRadev/sideways.vim'  "swapping function arguments
 Plug 'SirVer/ultisnips'  " snippet management
 Plug 'honza/vim-snippets'  " additional snippets for various programming languages (snipMate and UltiSnip)
 
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'  " sidebar with directory structure
 Plug 'ivalkeen/nerdtree-execute'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'jistr/vim-nerdtree-tabs'
