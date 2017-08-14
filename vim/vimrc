@@ -71,7 +71,7 @@ Plug 'SirVer/ultisnips'  " snippet management
 Plug 'honza/vim-snippets'  " additional snippets for various programming languages (snipMate and UltiSnip)
 
 Plug 'scrooloose/nerdtree'  " sidebar with directory structure
-Plug 'ivalkeen/nerdtree-execute'
+Plug 'ivalkeen/nerdtree-execute'  " execute NERDTree menu items (via m -> x buttons on item)
 Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'jistr/vim-nerdtree-tabs'
 
