@@ -72,7 +72,7 @@ Plug 'honza/vim-snippets'  " additional snippets for various programming languag
 
 Plug 'scrooloose/nerdtree'  " sidebar with directory structure
 Plug 'ivalkeen/nerdtree-execute'  " execute NERDTree menu items (via m -> x buttons on item)
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Xuyuanp/nerdtree-git-plugin'  " shows git status flags
 " Plug 'jistr/vim-nerdtree-tabs'
 
 Plug 'vim-scripts/tabular'
