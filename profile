@@ -21,15 +21,16 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-export PATH=$PATH:~/bin
-export PATH=$PATH:~/.local/bin
-
 # virtualenvwrapper configuration
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=~/envs
 export PROJECT_HOME=~/dev
 source /usr/local/bin/virtualenvwrapper.sh
 
-GOPATH_HOME="$HOME/go/"
+GOPATH_HOME="$HOME/go"
 mkdir -p $GOPATH_HOME
 export GOPATH="$GOPATH_HOME"
+
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$GOPATH/bin
