@@ -75,7 +75,7 @@ Plug 'ivalkeen/nerdtree-execute'  " execute NERDTree menu items (via m -> x butt
 Plug 'Xuyuanp/nerdtree-git-plugin'  " shows git status flags
 " Plug 'jistr/vim-nerdtree-tabs'
 
-Plug 'vim-scripts/tabular'
+Plug 'vim-scripts/tabular'  " line up text to a certain symbol
 "Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 " Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
