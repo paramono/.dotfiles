@@ -79,7 +79,7 @@ Plug 'vim-scripts/tabular'  " line up text to a certain symbol
 "Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 " Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " installs command-line fuzzy finder
-Plug 'vim-scripts/a.vim'
+Plug 'vim-scripts/a.vim'  " quickly alternate files (.c --> .h etc)
 Plug 'vim-scripts/L9'
 
 Plug 'scrooloose/syntastic'
