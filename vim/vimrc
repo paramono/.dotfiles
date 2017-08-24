@@ -83,7 +83,7 @@ Plug 'vim-scripts/a.vim'  " quickly alternate files (.c --> .h etc)
 Plug 'vim-scripts/L9'  " some utility functions for programming in vim; I probably don't need it
 
 Plug 'vim-syntastic/syntastic'  " runs code through external syntax checkers and displays errors
-Plug 'posva/vim-vue'
+Plug 'posva/vim-vue'  " syntax highlight for Vue.js components
 
 Plug 'justinmk/vim-sneak'
 Plug 'majutsushi/tagbar'
