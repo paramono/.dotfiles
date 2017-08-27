@@ -86,7 +86,7 @@ Plug 'vim-syntastic/syntastic'  " runs code through external syntax checkers and
 Plug 'posva/vim-vue'  " syntax highlight for Vue.js components
 
 Plug 'justinmk/vim-sneak'  " jump to any location specified by 's', followed by two characters
-Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'  " lets you browse tags of the current file and get overview of its structure
 Plug 'mhinz/vim-signify'
 Plug 'tyru/open-browser.vim'
 Plug 'tomasr/molokai'
