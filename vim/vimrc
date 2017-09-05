@@ -88,7 +88,7 @@ Plug 'posva/vim-vue'  " syntax highlight for Vue.js components
 Plug 'justinmk/vim-sneak'  " jump to any location specified by 's', followed by two characters
 Plug 'majutsushi/tagbar'  " lets you browse tags of the current file and get overview of its structure
 Plug 'mhinz/vim-signify'  " shows added, modified and removed lines in a separate column
-Plug 'tyru/open-browser.vim'
+Plug 'tyru/open-browser.vim'  " Open URI with your favorite browser
 Plug 'tomasr/molokai'
 Plug 'flazz/vim-colorschemes'
 
