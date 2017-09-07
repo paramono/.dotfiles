@@ -89,7 +89,7 @@ Plug 'justinmk/vim-sneak'  " jump to any location specified by 's', followed by 
 Plug 'majutsushi/tagbar'  " lets you browse tags of the current file and get overview of its structure
 Plug 'mhinz/vim-signify'  " shows added, modified and removed lines in a separate column
 Plug 'tyru/open-browser.vim'  " Open URI with your favorite browser
-Plug 'tomasr/molokai'
+Plug 'tomasr/molokai'  " molokai color scheme for vim
 Plug 'flazz/vim-colorschemes'
 
 Plug 'sloria/vim-ped'
