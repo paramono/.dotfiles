@@ -90,7 +90,7 @@ Plug 'majutsushi/tagbar'  " lets you browse tags of the current file and get ove
 Plug 'mhinz/vim-signify'  " shows added, modified and removed lines in a separate column
 Plug 'tyru/open-browser.vim'  " Open URI with your favorite browser
 Plug 'tomasr/molokai'  " molokai color scheme for vim
-Plug 'flazz/vim-colorschemes'
+Plug 'flazz/vim-colorschemes'  " color schemes for vim
 
 Plug 'sloria/vim-ped'
 
