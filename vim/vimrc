@@ -92,7 +92,7 @@ Plug 'tyru/open-browser.vim'  " Open URI with your favorite browser
 Plug 'tomasr/molokai'  " molokai color scheme for vim
 Plug 'flazz/vim-colorschemes'  " color schemes for vim
 
-Plug 'sloria/vim-ped'
+Plug 'sloria/vim-ped'  " opens python modules based on python import paths; requires ped package
 
 " Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline'
