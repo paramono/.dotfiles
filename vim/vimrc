@@ -95,7 +95,7 @@ Plug 'flazz/vim-colorschemes'  " color schemes for vim
 Plug 'sloria/vim-ped'  " opens python modules based on python import paths; requires ped package
 
 " Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline'  " status/tabline for vim
 Plug 'vim-airline/vim-airline-themes'
 " Plug 'bling/vim-bufferline'
 Plug 'powerline/fonts', {'do': './install.sh'}
