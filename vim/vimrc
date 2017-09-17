@@ -96,7 +96,7 @@ Plug 'sloria/vim-ped'  " opens python modules based on python import paths; requ
 
 " Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline'  " status/tabline for vim
-Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline-themes'  " themes for vim-airline
 " Plug 'bling/vim-bufferline'
 Plug 'powerline/fonts', {'do': './install.sh'}
 
