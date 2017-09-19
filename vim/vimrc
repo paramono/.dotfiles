@@ -100,7 +100,7 @@ Plug 'vim-airline/vim-airline-themes'  " themes for vim-airline
 " Plug 'bling/vim-bufferline'
 Plug 'powerline/fonts', {'do': './install.sh'}  " patched fonts for airline/powerline
 
-Plug 'vim-scripts/summerfruit256.vim'
+Plug 'vim-scripts/summerfruit256.vim'  " summerfruit color scheme
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-colorscheme-switcher'
 
