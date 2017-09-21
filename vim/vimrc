@@ -102,7 +102,7 @@ Plug 'powerline/fonts', {'do': './install.sh'}  " patched fonts for airline/powe
 
 Plug 'vim-scripts/summerfruit256.vim'  " summerfruit color scheme
 Plug 'xolox/vim-misc'  " core dependencies for xolox-written vim plugins
-Plug 'xolox/vim-colorscheme-switcher'
+Plug 'xolox/vim-colorscheme-switcher'  " makes it easy to switch between vim colorschemes
 
 Plug 'kana/vim-arpeggio'
 
