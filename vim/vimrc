@@ -104,7 +104,7 @@ Plug 'vim-scripts/summerfruit256.vim'  " summerfruit color scheme
 Plug 'xolox/vim-misc'  " core dependencies for xolox-written vim plugins
 Plug 'xolox/vim-colorscheme-switcher'  " makes it easy to switch between vim colorschemes
 
-Plug 'kana/vim-arpeggio'
+Plug 'kana/vim-arpeggio'  " mappings for simultaneously pressed keys
 
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
