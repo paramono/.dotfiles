@@ -106,7 +106,7 @@ Plug 'xolox/vim-colorscheme-switcher'  " makes it easy to switch between vim col
 
 Plug 'kana/vim-arpeggio'  " mappings for simultaneously pressed keys
 
-Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator'  " Allows you to jump between vim/tmux windows with ctrl-hjkl
 Plug 'benmills/vimux'
 
 call plug#end()
