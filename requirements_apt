@@ -43,6 +43,7 @@ package "sqlite3"
 package "sqliteman"
 package "extlinux"
 package "meld"  # for convenient diffs
+package "xsel"  # clipboard
 
 # for python Pillow
 package "libtiff5-dev" 
@@ -98,5 +99,3 @@ package "shutter"
 # required for bower, which is used in django projects for downloading frontend packages
 # curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 # sudo apt-get install -y nodejs
-
-package "xsel"  # clipboard
