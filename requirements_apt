@@ -44,6 +44,7 @@ package "sqliteman"
 package "extlinux"
 package "meld"  # for convenient diffs
 package "xsel"  # clipboard
+package "unrar"  # to be able to unpack .rar archives
 
 # for python Pillow
 package "libtiff5-dev" 
