@@ -59,6 +59,7 @@ Plug 'groenewege/vim-less'  " syntax highlighting for LESS (CSS preprocessor)
 Plug 'tommcdo/vim-lion'  " align lines to certain symbol
 Plug 'AndrewRadev/splitjoin.vim'  " gS and gJ mapping for splitting/joining selected text
 Plug 'vim-scripts/matchit.zip'  " match braces, if/elif/else constructs, etc. with % command
+Plug 'Vimjas/vim-python-pep8-indent'  " PEP8 indentation for python
 
 Plug 'vim-scripts/python_match.vim'  " cycle through python's if/then/else
 Plug 'AndrewRadev/sideways.vim'  "swapping function arguments
