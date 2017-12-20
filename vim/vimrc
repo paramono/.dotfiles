@@ -299,6 +299,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 " let g:syntastic_python_checkers = ['pylint']
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0 " Removes annoying window; default is 1
 let g:syntastic_check_on_open = 1
@@ -397,11 +398,11 @@ call arpeggio#map('n', '', 0, 'nf', ':NERDTreeFocus<CR>') " Close NERDTRee
 " syntax highlighting for Django templates
 call arpeggio#map('n', '', 0, 'dj', ':setfiletype htmldjango<CR>')
 
+call arpeggio#map('n', '', 0, 'sh', ':SidewaysLeft<CR>') " Close NERDTRee
+call arpeggio#map('n', '', 0, 'sl', ':SidewaysRight<CR>') " Close NERDTRee
 
 nnoremap <F5> :PrevColorScheme<CR>
 nnoremap <F6> :NextColorScheme<CR>
-nnoremap <c-h> :SidewaysLeft<cr>
-nnoremap <c-l> :SidewaysRight<cr>
 
 " simplify window changing
 nnoremap <C-J> <C-W><C-J>
