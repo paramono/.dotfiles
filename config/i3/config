@@ -149,9 +149,16 @@ bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle #i
 # amixer -D pulse set Master 1+ toggle
 # http://askubuntu.com/questions/65764/how-do-i-toggle-sound-with-amixer
 
-# Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+# Screen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 2 # increase screen brightness
+bindsym XF86KbdBrightnessUp exec xbacklight -inc 2 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 2 # decrease screen brightness
+bindsym XF86KbdBrightnessDown exec xbacklight -dec 2 # decrease screen brightness
+
+# workaround for some ASUS laptops
+# linux kernel 4.10 solves the issue of not working media keys
+bindsym $mod+F5 exec xbacklight -dec 2 # decrease screen brightness
+bindsym $mod+F6 exec xbacklight -inc 2 # decrease screen brightness
 
 # Touchpad controls
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
