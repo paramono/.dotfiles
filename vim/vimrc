@@ -300,6 +300,9 @@ set statusline+=%*
 
 " let g:syntastic_python_checkers = ['pylint']
 
+" Ignored flake8 errors:
+" E221: multiple spaces before operator (to allow prettier alignment)
+let g:syntastic_python_flake8_post_args='--ignore=E221'
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0 " Removes annoying window; default is 1
 let g:syntastic_check_on_open = 1
