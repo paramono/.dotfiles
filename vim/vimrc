@@ -76,7 +76,8 @@ Plug 'ivalkeen/nerdtree-execute'  " execute NERDTree menu items (via m -> x butt
 Plug 'Xuyuanp/nerdtree-git-plugin'  " shows git status flags
 " Plug 'jistr/vim-nerdtree-tabs'
 
-Plug 'vim-scripts/tabular'  " line up text to a certain symbol
+Plug 'vim-scripts/tabular'      " line up text to a certain symbol
+Plug 'junegunn/vim-easy-align'  " simpler alignment plugin
 "Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 " Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " installs command-line fuzzy finder
@@ -412,6 +413,11 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+"
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 " default behaviour splits to up and left, which is confusing
 set splitbelow
