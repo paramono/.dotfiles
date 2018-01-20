@@ -93,6 +93,7 @@ package "xbacklight"
 
 # to be able to send/see notifications
 notify-osd
+notify-osd-icons
 
 # screenshotting
 package "shutter"
