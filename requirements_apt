@@ -91,6 +91,9 @@ package "dmenu"
 # to control backlight via keyboard (for specific i3 bindsym)
 package "xbacklight"  
 
+# to be able to send/see notifications
+notify-osd
+
 # screenshotting
 package "shutter"
 
