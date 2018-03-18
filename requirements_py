@@ -28,3 +28,5 @@ cookiecutter
 httpie
 ped
 youtube-dl
+
+pipenv # pip/virtualenv alternative
