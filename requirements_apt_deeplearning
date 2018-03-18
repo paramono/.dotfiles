@@ -1,0 +1,4 @@
+package "nvidia-cuda-toolkit"
+package "graphviz"
+package "python3-pydot"
+package "python-pydot-ng"
