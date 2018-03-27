@@ -7,6 +7,7 @@ ppa "shutter/ppa"
 update
 
 # basic
+packace "autossh"
 package "keepassx"
 package "chromium-browser"
 package "skype"
@@ -97,6 +98,8 @@ notify-osd-icons
 
 # screenshotting
 package "shutter"
+
+# image editing
 
 # ntop has post-install script with pseudo gui which hangs aptfile
 # package "ntop"
