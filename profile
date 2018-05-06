@@ -22,10 +22,11 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 # virtualenvwrapper configuration
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+# export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=~/envs
 export PROJECT_HOME=~/dev
-source /usr/local/bin/virtualenvwrapper.sh
+# source "$HOME/.local/bin/virtualenvwrapper.sh"
+# source /usr/local/bin/virtualenvwrapper.sh
 
 GOPATH_HOME="$HOME/go"
 mkdir -p $GOPATH_HOME

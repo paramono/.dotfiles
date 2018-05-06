@@ -127,8 +127,8 @@ fi
 
 # virtualenvwrapper configuration
 # both of these don't work in .profile
-source /usr/local/bin/virtualenvwrapper.sh
-export PROJECT_HOME=~/dev
+# source /usr/local/bin/virtualenvwrapper.sh
+# export PROJECT_HOME=~/dev
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
@@ -138,3 +138,7 @@ complete -F _fzf_path_completion gnome-open
 complete -F _fzf_path_completion pytest
 
 export EDITOR="/usr/bin/vim"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
